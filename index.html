@@ -1,26 +1,54 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-    </head>
 
-    <body>
-        <div class="header-container"></div>
-        <div class="main-content-container">
-            <video 
-            class="video-background"
-            autoplay 
-            loop 
-            muted 
-            playsinline 
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">MALVY DELABAN</div>
+        <nav>
+            <a href="#">Home</a><span class="separator-nav"> · </span>
+
+            <a href="#">My work</a><span class="separator-nav"> · </span>
+            <a href="#">Experiences</a><span class="separator-nav"> · </span>
+            <a href="#">About me</a>
+        </nav>
+        <a href="#" class="contact-btn">Contact me</a>
+    </header>
+
+
+    <div class="main-content-container">
+        <video class="video-background" autoplay loop muted playsinline
             style="width: 100%; height: auto; object-fit: cover;">
             <source src="assets/blodscinn_cut.mp4" type="video/mp4">
             Your navigator does not support this video.
         </video>
+        <div class="titles-and-roles">
+            <span class="main-title">MALVY DELABAN</span>
+            <h2 class="role">Environment Artist</h2>
+            <h3 class="role">Game designer</h3>
+            <h4 class="role">Developper</h4>
+            <h5 class="role">And more</h5>
+            <svg width="40px" height="100%" viewBox="0 0 247 390" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+                <path id="wheel" d="M123.359,79.775l0,72.843" style="fill:none;stroke:#67E8F2;stroke-width:30px;" />
+                <path id="mouse"
+                    d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z"
+                    style="fill:none;stroke:#fff;stroke-width:20px;" />
+            </svg>
+
+        </div>
     </div>
     <div class="footer-container"></div>
-    <script>
-    </script>
-    </body>
+</body>
 
 </html>
