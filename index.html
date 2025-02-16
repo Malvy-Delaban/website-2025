@@ -21,7 +21,9 @@
             <a href="#">Experiences</a><span class="separator-nav"> · </span>
             <a href="#">About me</a>
         </nav>
-        <a href="#" class="contact-btn">Contact me</a>
+        <div class="button-container">
+            <button class="contact-btn" onclick="openLinkedInChat()">Contact me</button>
+        </div>
     </header>
 
 
@@ -49,6 +51,13 @@
         </div>
     </div>
     <div class="footer-container"></div>
+
+    <script>
+        function openLinkedInChat() {
+            // Replace 'your-linkedin-profile-url' with your actual LinkedIn profile URL
+            window.open('https://www.linkedin.com/messaging/compose/?recipient=malvy-delaban', '_blank');
+        }
+    </script>
 </body>
 
 </html>
