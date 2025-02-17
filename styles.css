@@ -34,12 +34,13 @@ header {
 
 .logo {
     z-index: 2;
-    font-size: 1.8rem;
+    font-size: 1.6vw;
     font-weight: 1000;
     color: white;
     text-transform: uppercase;
     margin-left: 3rem;
-    width: 25rem;
+    width: 25vw;
+    cursor: default;
 }
 
 .separator-nav {
@@ -65,7 +66,7 @@ nav a {
     color: white;
     text-decoration: none;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.2vw;
     transition: color 0.15s ease-in-out;
 }
 
@@ -89,7 +90,7 @@ nav a:hover {
 
 .button-container {
     z-index: 2;
-    width: 25rem;
+    width: 25vw;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -135,10 +136,11 @@ nav a:hover {
 
 .video-background {
     position: absolute;
+    height: 100%;
     width: 100%;
-    height: auto;
     opacity: 30%;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0% 80%);
+    object-fit: cover;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 90%);
 }
 
 .titles-and-roles {
@@ -153,10 +155,16 @@ nav a:hover {
 
 .main-title {
     color: white;
-    font-size: 6rem;
+    font-size: 5vw;
     text-align: center;
     max-width: 80%;
     font-family: 'Montserrat';
+    font-weight: 800;
+    transition: all 0.2s ease-in-out;
+    cursor: default;
+}
+
+.main-title:hover {
     font-weight: 900;
 }
 
@@ -166,10 +174,16 @@ nav a:hover {
     font-family: 'Montserrat';
     font-weight: bolder;
     margin: 0;
+    transition: all 0.2s ease-in-out;
+    cursor: default;
+}
+
+.role:hover {
+    color: #486eb4;
 }
 
 h2 {
-    padding-top: 2rem;
+    margin-top: 2rem;
 }
 
 h5 {
@@ -177,26 +191,26 @@ h5 {
 }
 
 .role:nth-child(2) {
-    font-size: 4rem;
+    font-size: 3.5vw;
     opacity: 100%;
 }
 
 .role:nth-child(3) {
-    font-size: 3.5rem;
+    font-size: 3vw;
     opacity: 75%;
 }
 
 .role:nth-child(4) {
-    font-size: 3rem;
+    font-size: 2.5vw;
     opacity: 65%;
 }
 
 .role:nth-child(5) {
-    font-size: 2.5rem;
+    font-size: 2vw;
     opacity: 55%;
 }
 
-/* mouse animation */
+/* mouse wheel animation */
 
 @keyframes scroll {
     0% {
@@ -210,4 +224,126 @@ h5 {
 
 svg #wheel {
     animation: scroll ease 2s infinite;
+}
+
+/* Work */
+
+.large-centered-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my-work-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.title-section {
+    font-size: 3rem;
+    font-weight: 1000;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    cursor: default;
+}
+
+.work-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.work {
+    width: 40vh;
+    background-color: #231F2E;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.work:hover {
+    background-color: #191620; /* Un peu plus clair */
+    box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.4); /* Ombre blanche discrète */
+    transform: rotateX(0deg) rotateZ(2deg); /* Effet d’inclinaison */
+}
+
+.inside-work {
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+}
+
+.img-work {
+    width: calc(100% - 3rem);
+    border-radius: 5px;
+}
+
+.work-title-line {
+    width: calc(100% - 3rem);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.work-data {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+}
+
+.work-chips {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    width: calc(100% - 3rem);
+    max-width: calc(100% - 3rem);
+}
+
+.chips {
+    border-radius: 5rem;
+    background-color: #0097a7;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+.render-chip {
+    background-color: #DF4848;
+}
+
+.game-chip {
+    background-color: #3BAF75;
+}
+
+.genre-chip {
+    background-color: #AF3B94;
+}
+
+.team-chip {
+    background-color: #0097a7;
+}
+
+.status-chip {
+    background-color: #c7681b;
+}
+
+
+
+/* spacing-temp */
+
+.spacing-temp {
+    height: 15rem;
+    width: 15rem;
 }

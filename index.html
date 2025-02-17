@@ -17,7 +17,7 @@
         <nav>
             <a href="#">Home</a><span class="separator-nav"> · </span>
 
-            <a href="#">My work</a><span class="separator-nav"> · </span>
+            <a href="#my-work">My work</a><span class="separator-nav"> · </span>
             <a href="#">Experiences</a><span class="separator-nav"> · </span>
             <a href="#">About me</a>
         </nav>
@@ -27,8 +27,7 @@
     </header>
 
     <div class="main-content-container">
-        <video class="video-background" autoplay loop muted playsinline
-            style="width: 100%; height: auto; object-fit: cover;">
+        <video class="video-background" autoplay loop muted playsinline>
             <source src="assets/blodscinn_cut.mp4" type="video/mp4">
             Your navigator does not support this video.
         </video>
@@ -50,19 +49,127 @@
         </div>
     </div>
 
-    <!-- <div class="my-work-container">
-        <div class="title-section">My Work</div>
-        <div class="work-list">
-            <div class="work"></div>
+    <div class="large-centered-container">
+        <div class="my-work-container">
+            <div id="my-work" class="title-section">My Work</div>
+            <div class="work-list">
+                <div class="work" onclick="window.open('https://www.youtube.com/watch?v=E0bMZx7ac5M&ab_channel=MalvyDelaban', '_blank')">
+                    <div class="inside-work">
+                        <img src="assets/works/blodscinn.png" alt="blodscinn wrath screenshot" class="img-work">
+                        <div class="work-title-line">
+                            <div class="work-data">Blodscinn Wrath</div>
+                            <div class="work-data">2024</div>
+                        </div>
+                        <div class="work-chips">
+                            <div class="chips render-chip">3D</div>
+                            <div class="chips game-chip">Game Concept</div>
+                            <div class="chips team-chip">Solo project</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work" onclick="window.open('https://github.com/RemyAlmar/VoidFisher', '_blank')">
+                    <div class="inside-work">
+                        <img src="assets/works/voidfisher.png" alt="void fisher screenshot" class="img-work">
+                        <div class="work-title-line">
+                            <div class="work-data">Void Fisher</div>
+                            <div class="work-data">2025</div>
+                        </div>
+                        <div class="work-chips">
+                            <div class="chips render-chip">3D</div>
+                            <div class="chips game-chip">Full Game</div>
+                            <div class="chips genre-chip">Fishing</div>
+                            <div class="chips team-chip">Team project</div>
+                            <div class="chips status-chip">In development</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work" onclick="window.open('https://malvy-delaban.itch.io/bubblhead', '_blank')">
+                    <div class="inside-work">
+                        <img src="assets/works/bubblhead.png" alt="bubbl'head screenshot" class="img-work">
+                        <div class="work-title-line">
+                            <div class="work-data">Bubbl'Head</div>
+                            <div class="work-data">2025</div>
+                        </div>
+                        <div class="work-chips">
+                            <div class="chips render-chip">3D</div>
+                            <div class="chips game-chip">Game Jam</div>
+                            <div class="chips genre-chip">Casual</div>
+                            <div class="chips team-chip">Team project</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work" onclick="window.open('https://malvy-delaban.itch.io/skipthebeat', '_blank')">
+                    <div class="inside-work">
+                        <img src="assets/works/skipthebeat.png" alt="skip the beat screenshot" class="img-work">
+                        <div class="work-title-line">
+                            <div class="work-data">Skip The Beat</div>
+                            <div class="work-data">2023</div>
+                        </div>
+                        <div class="work-chips">
+                            <div class="chips render-chip">2D</div>
+                            <div class="chips game-chip">Full Game</div>
+                            <div class="chips genre-chip">Rythm</div>
+                            <div class="chips team-chip">Solo project</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work" onclick="window.open('https://poke.malvy-delaban.fr/', '_blank')">
+                    <div class="inside-work">
+                        <img src="assets/works/pokeadventure.png" alt="poke adventure screenshot" class="img-work">
+                        <div class="work-title-line">
+                            <div class="work-data">Poke Adventure</div>
+                            <div class="work-data">2024</div>
+                        </div>
+                        <div class="work-chips">
+                            <div class="chips render-chip">Mobile</div>
+                            <div class="chips render-chip">Web</div>
+                            <div class="chips game-chip">Full Game</div>
+                            <div class="chips genre-chip">Advent Calendar</div>
+                            <div class="chips team-chip">Solo project</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work" onclick="window.open('https://malvy-delaban.itch.io/sandyfight', '_blank')">
+                    <div class="inside-work">
+                        <img src="assets/works/sandyfight.png" alt="sandy fight screenshot" class="img-work">
+                        <div class="work-title-line">
+                            <div class="work-data">Sandy Fight</div>
+                            <div class="work-data">2024</div>
+                        </div>
+                        <div class="work-chips">
+                            <div class="chips render-chip">3D</div>
+                            <div class="chips game-chip">Game Jam</div>
+                            <div class="chips genre-chip">Casual TPS</div>
+                            <div class="chips team-chip">Duo project</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work" onclick="window.open('https://map.malvy-delaban.fr/', '_blank')">
+                    <div class="inside-work">
+                        <img src="assets/works/procedural.png" alt="procedural map screenshot" class="img-work">
+                        <div class="work-title-line">
+                            <div class="work-data">Procedural Map</div>
+                            <div class="work-data">2022</div>
+                        </div>
+                        <div class="work-chips">
+                            <div class="chips render-chip">Web</div>
+                            <div class="chips game-chip">Concept</div>
+                            <div class="chips genre-chip">Procedural</div>
+                            <div class="chips team-chip">Solo project</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div> -->
+    </div>
 
+
+    <div class="spacing-temp"></div>
 
     <div class="footer-container"></div>
 
     <script>
         function openLinkedInChat() {
-            // Replace 'your-linkedin-profile-url' with your actual LinkedIn profile URL
             window.open('https://www.linkedin.com/messaging/compose/?recipient=malvy-delaban', '_blank');
         }
     </script>
