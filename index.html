@@ -1,7 +1,10 @@
 <!DOCTYPE HTML>
 <html>
 
+<!-- IMPORTS -->
+
 <head>
+    <title>Malvy DELABAN</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,20 +15,21 @@
 </head>
 
 <body>
+    <!-- HEADER -->
     <header>
         <div class="logo">MALVY DELABAN</div>
         <nav>
             <a href="#">Home</a><span class="separator-nav"> · </span>
-
             <a href="#my-work">My work</a><span class="separator-nav"> · </span>
             <a href="#experiences">Experiences</a><span class="separator-nav"> · </span>
-            <a href="#">About me</a>
+            <a href="#about-me">About me</a>
         </nav>
         <div class="button-container">
             <button class="contact-btn" onclick="openLinkedInChat()">Contact me</button>
         </div>
     </header>
 
+    <!-- MAIN TITLE AND VIDEO -->
     <div class="main-content-container">
         <video class="video-background" autoplay loop muted playsinline>
             <source src="assets/blodscinn_cut.mp4" type="video/mp4">
@@ -49,11 +53,13 @@
         </div>
     </div>
 
-    <div class="large-centered-container">
+    <!-- WORKS -->
+    <div class="large-centered-container work-main-container">
         <div class="my-work-container">
             <div id="my-work" class="title-section">My Work</div>
             <div class="work-list">
-                <div class="work" onclick="window.open('https://www.youtube.com/watch?v=E0bMZx7ac5M&ab_channel=MalvyDelaban', '_blank')">
+                <div class="work"
+                    onclick="window.open('https://www.youtube.com/watch?v=E0bMZx7ac5M&ab_channel=MalvyDelaban', '_blank')">
                     <div class="inside-work">
                         <img src="assets/works/blodscinn.png" alt="blodscinn wrath screenshot" class="img-work">
                         <div class="work-title-line">
@@ -163,11 +169,13 @@
         </div>
     </div>
 
+    <!-- EXPERIENCES -->
     <div class="large-centered-container experiences-main-container">
         <div class="experiences-container">
             <div id="experiences" class="title-section">Experiences</div>
             <div class="experiences-list">
-                <div class="experience" onclick="window.open('https://www.esma-artistique.com/en/trainings/video-game/', '_blank')">
+                <div class="experience"
+                    onclick="window.open('https://www.esma-artistique.com/en/trainings/video-game/', '_blank')">
                     <div class="inside-experience">
                         <img src="assets/experiences/esma.png" alt="esma photography" class="img-experience">
                         <div class="experience-title-line">
@@ -197,7 +205,8 @@
                             <div class="chips exp-type-chip">Full time</div>
                         </div>
                         <div class="experience-short-description">
-                            Lead developer in a Startup that creates solutions to fluid dynamics problems in large aeronautics and industrial companies.
+                            Lead developer in a Startup that creates solutions to fluid dynamics problems in large
+                            aeronautics and industrial companies.
                         </div>
                     </div>
                 </div>
@@ -214,7 +223,8 @@
                             <div class="chips exp-type-chip">Master's Degree</div>
                         </div>
                         <div class="experience-short-description">
-                            A software development school where I learnt the basis and became a web developer throughout multiple internships and contract as a self-employed.
+                            A software development school where I learnt the basis and became a web developer throughout
+                            multiple internships and contract as a self-employed.
                         </div>
                     </div>
                 </div>
@@ -231,21 +241,62 @@
                             <div class="chips exp-type-chip">Internship</div>
                         </div>
                         <div class="experience-short-description">
-                            A multi-national company where I developed an open-source solution to manage plannings, budgets, documentation and a lot more.                        </div>
+                            A multi-national company where I developed an open-source solution to manage plannings,
+                            budgets, documentation and a lot more. </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- ABOUT ME -->
+    <div class="large-centered-container about-me-main-container">
+        <div class="about-me-container">
+            <div id="about-me" class="title-section">About Me</div>
+            <div class="about-me-description">
+                With 5 years of studies in software development and 3 years in video game creation, I use my skills to
+                bring environments to life, aiming to make the player's experience more immersive than ever.
+                <br><br>
+                I'm currently searching for a company to help build their own fantastic world in which the player will
+                live incredible stories and adventure. Feel free to contact me via linkedin and let's start building
+                this world together.
+            </div>
+            <div class="about-me-icons-container">
+                <div class="about-me-icon-container" onclick="openItchio()">
+                    <img src="assets/icons/itchio.png" alt="itch io logo" class="about-me-icon">
+                    <div class="about-me-icon-text">Itch.io</div>
+                </div>
+                <div class="about-me-icon-container" onclick="openGithub()">
+                    <img src="assets/icons/github.png" alt="github logo" class="about-me-icon">
+                    <div class="about-me-icon-text">Github</div>
+                </div>
+                <div class="about-me-icon-container" onclick="openLinkedIn()">
+                    <img src="assets/icons/linkedin.png" alt="linked in logo" class="about-me-icon">
+                    <div class="about-me-icon-text">LinkedIn</div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <div class="spacing-temp"></div>
-
+    <!-- FOOTER -->
     <div class="footer-container"></div>
 
+    <!-- SCRIPTS -->
     <script>
         function openLinkedInChat() {
             window.open('https://www.linkedin.com/messaging/compose/?recipient=malvy-delaban', '_blank');
+        }
+
+        function openLinkedIn() {
+            window.open('https://www.linkedin.com/in/malvy-delaban/', '_blank');
+        }
+
+        function openGithub() {
+            window.open('https://github.com/Malvy-Delaban', '_blank');
+        }
+        
+        function openItchio() {
+            window.open('https://malvy-delaban.itch.io/', '_blank');
         }
     </script>
 </body>

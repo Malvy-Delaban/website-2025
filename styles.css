@@ -235,7 +235,12 @@ svg #wheel {
     align-items: center;
 }
 
-.my-work-container, .experiences-container {
+.work-main-container {
+    padding-bottom: 6rem;
+}
+
+.my-work-container, .experiences-container, .about-me-container {
+    z-index: 1;
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -260,7 +265,7 @@ svg #wheel {
 
 .work, .experience {
     width: 40vh;
-    background-color: #231F2E;
+    background-color: #252031;
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -269,10 +274,14 @@ svg #wheel {
     transition: all 0.3s ease-in-out;
 }
 
+.experience {
+    background-color: #2E293B;
+}
+
 .work:hover, .experience:hover {
-    background-color: #191620; /* Un peu plus clair */
-    box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.4); /* Ombre blanche discrète */
-    transform: rotateX(0deg) rotateZ(2deg); /* Effet d’inclinaison */
+    background-color: #443e53;
+    box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.4);
+    transform: rotateX(0deg) rotateZ(2deg);
 }
 
 .inside-work, .inside-experience {
@@ -342,13 +351,13 @@ svg #wheel {
 /* Experiences */
 
 .experiences-main-container {
-    padding-top: 10rem;
+    background-color: #252031;
+    padding: 10rem 0;
+    clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
 }
 
-
-
 .experience-data {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 600;
     color: white;
 }
@@ -374,9 +383,56 @@ svg #wheel {
     color: white;
 }
 
+/* About me */
+
+.about-me-main-container {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.about-me-description {
+    text-align: justify;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+}
+
+.about-me-icons-container {
+    margin-top: 12vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.about-me-icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.about-me-icon-container:hover {
+    transform: rotateX(0deg) rotateZ(2deg);
+}
+
+.about-me-icon {
+    height: 17vh;
+}
+
+.about-me-icon-text {
+    margin-top: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-weight: 800;
+    color: white;
+}
+
 /* spacing-temp */
 
 .spacing-temp {
     height: 15rem;
-    width: 15rem;
+    width: 100%;
 }
