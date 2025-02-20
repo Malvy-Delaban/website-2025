@@ -139,4 +139,34 @@ iframe {
         margin: 0 5vw;
         clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
     }
+
+    #main-title-article-title {
+        font-size: 4vh;
+    }
+
+    .default-article-chip {
+        font-size: 1.5vh;
+        padding: 0.5vh 1vh;
+    }
+
+    #article-content {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 4.5vh;
+        text-align: center;
+    }
+    
+    .single-image-img {
+        height: 20vh;
+    }
+
+    .single-image-description {
+        font-size: 1.5vh;
+    }
+
+    .image-container {
+        flex-direction: column;
+    }
 }
