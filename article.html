@@ -31,6 +31,10 @@
         </div>
     </header>
 
+    <div id="lightbox" class="hidden">
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
     <img src="" alt="background article image" id="background-article-img">
     <div class="main-title-article-container">
         <div id="main-title-article-title">Loading ...</div>
@@ -114,7 +118,7 @@
 
                 let html = `<br><br><div class="image-container">`;
                 images.forEach(([_, path, alt]) => {
-                    html += `<div class="single-image"><img src="articles/${articleName}/${path}" alt="${alt}" class="single-image-img"><div class="single-image-description">${alt}</div></div>`;
+                    html += `<div class="single-image" onclick="openLightbox('articles/${articleName}/${path}', '${alt}')"><img src="articles/${articleName}/${path}" alt="${alt}" class="single-image-img"><div class="single-image-description">${alt}</div></div>`;
                 });
                 html += `</div>`;
 
@@ -123,6 +127,19 @@
 
             return markdown;
         }
+
+        function openLightbox(imageSrc, altText) {
+            const lightbox = document.getElementById("lightbox");
+            const lightboxImg = document.getElementById("lightbox-img");
+
+            lightboxImg.src = imageSrc;
+            lightboxImg.alt = altText;
+            lightbox.classList.remove("hidden");
+        }
+
+        document.getElementById("lightbox").addEventListener("click", function () {
+            this.classList.add("hidden");
+        });
 
     </script>
 
