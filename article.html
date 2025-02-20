@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+
+<!-- IMPORTS -->
+
+<head>
+    <title>Malvy DELABAN</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="assets/icons/malvy.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="article.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">MALVY DELABAN</div>
+        <nav>
+            <a href="index.html">Home</a><span class="separator-nav"> · </span>
+            <a href="index.html#my-work">My work</a><span class="separator-nav"> · </span>
+            <a href="index.html#experiences">Experiences</a><span class="separator-nav"> · </span>
+            <a href="index.html#about-me">About me</a>
+        </nav>
+        <div class="button-container">
+            <button class="contact-btn" onclick="openLinkedInChat()">Contact me</button>
+        </div>
+    </header>
+
+    <img src="" alt="background article image" id="background-article-img">
+    <div class="main-title-article-container">
+        <div id="main-title-article-title">Loading ...</div>
+        <div id="article-chips">
+
+        </div>
+    </div>
+    <div class="article-content-container">
+        <div id="article-content">Veuillez patienter...</div>
+    </div>
+
+    <script>
+        // Fonction pour récupérer les paramètres de l'URL
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Récupérer le paramètre "info" de l'URL
+        const articleName = getQueryParam("info");
+
+        if (articleName) {
+            // Charger dynamiquement le fichier Markdown correspondant
+            fetch(`articles/${articleName}/${articleName}.md`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error("Article introuvable : " + `articles/${articleName}/${articleName}.md`);
+                    }
+                    return response.text();
+                })
+                .then(markdown => {
+                    // Séparer les métadonnées et le contenu
+                    const titleMatch = markdown.match(/^Title:\s*"(.+?)"/m);
+                    const tagsMatch = markdown.match(/^Tags:\s*(.*)/m);
+                    const myTagRegex = /\"([^\"]+)\"\s+(\w+)/g;
+                    const tags = [];
+                    let match;
+                    while ((match = myTagRegex.exec(tagsMatch[1])) !== null) {
+                        // match[1] = Nom du tag, match[2] = Type du tag
+                        tags.push([match[1], match[2]]);
+                    }
+
+                    let title = titleMatch ? titleMatch[1] : "Untitled";
+
+                    document.getElementById("main-title-article-title").textContent = title;
+                    tags.forEach(tag => {
+                        const name = tag[0];
+                        const type = tag[1];
+
+                        const chip = document.createElement("div");
+                        chip.textContent = name;
+                        chip.classList.add("default-article-chip", `${type}-chip`);
+
+                        document.getElementById("article-chips").appendChild(chip);
+                    });
+                    document.getElementById("background-article-img").src = `articles/${articleName}/background.png`;
+                    const removedMetaData = markdown.replace(/^[\s\S]*?===== *\n*/, '');
+                    document.getElementById("article-content").innerHTML = convertMarkdownToHTML(removedMetaData, articleName);
+                })
+        }
+
+        function convertMarkdownToHTML(markdown, articleName) {
+            markdown = convertMarkdownToHTMLForImages(markdown, articleName);
+            const youtubeRegex = /@@@(https?:\/\/www\.youtube\.com\/watch\?v=([\w-]+)(?:&[\w=]*)*)@@@/g;
+
+            return markdown
+                .replace(/^# (.*$)/gm, "<h1>$1</h1>")  // Titles
+                .replace(/\*\*(.*?)\*\*/g, "<b>$1</b>") // Bold
+                .replace(/\*(.*?)\*/g, "<i>$1</i>") // Italic
+                .replace(/\n/g, "<br>") // carriage returns
+                .replace(youtubeRegex, (match, url, videoId) => {
+                    return `<br><br><iframe src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>`;
+                });
+        }
+
+        function convertMarkdownToHTMLForImages(markdown, articleName) {
+            const imageBlockRegex = /!!!\r?\n([\s\S]+?)\r?\n!!!/g;
+            markdown = markdown.replace(imageBlockRegex, (match, content) => {
+                const images = [...content.matchAll(/\((.*?)\)\s*(.*)/g)];
+                if (images.length === 0) return match; // No valid images found, return original text
+
+                let html = `<br><br><div class="image-container">`;
+                images.forEach(([_, path, alt]) => {
+                    html += `<div class="single-image"><img src="articles/${articleName}/${path}" alt="${alt}" class="single-image-img"><div class="single-image-description">${alt}</div></div>`;
+                });
+                html += `</div>`;
+
+                return html;
+            });
+
+            return markdown;
+        }
+
+    </script>
+
+</body>
+
+</html>

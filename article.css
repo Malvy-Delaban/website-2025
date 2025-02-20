@@ -1,0 +1,116 @@
+#background-article-img {
+    width: 100vw;
+    height: 90vh;
+    object-fit: cover;
+}
+
+.main-title-article-container {
+    position: absolute;
+    top: 60vh;
+    right: 0;
+    width: 80vh;
+    height: 18vh;
+    background-color: #2E293B;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 15% 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#main-title-article-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 5vh;
+    font-weight: 800;
+    color: white;
+}
+
+#article-chips {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.default-article-chip {
+    border-radius: 5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+.article-content-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20vh;
+    padding-top: 0vh;
+}
+
+#article-content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 2vh;
+    font-weight: 500;
+    text-align: justify;
+}
+
+b {
+    display: inline;
+}
+
+h1 {
+    color: #67E8F2;
+    text-transform: uppercase;
+    font-size: 5vh;
+    font-weight: 800;
+}
+
+iframe {
+    width: 50%;
+    aspect-ratio: 16 / 9;
+}
+
+.image-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.single-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-image-img {
+    height: 15vw;
+}
+
+.single-image-description {
+    padding-top: 0.5rem;
+    opacity: 50%;
+}
+
+@media (max-width : 1000px) {
+
+    .main-title-article-container {
+        width: 90vw;
+        left: 0;
+        margin: 0 5vw;
+        clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
+    }
+}

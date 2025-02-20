@@ -42,8 +42,8 @@
             <h3 class="role">Game designer</h3>
             <h4 class="role">Developper</h4>
             <h5 class="role">And more</h5>
-            <svg id="mouse-svg" width="40px" height="100%" viewBox="0 0 247 390" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
+            <svg id="mouse-svg" width="40px" height="100%" viewBox="0 0 247 390" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                 style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
                 <path id="wheel" d="M123.359,79.775l0,72.843" style="fill:none;stroke:#67E8F2;stroke-width:30px;" />
                 <path id="mouse"
@@ -59,8 +59,7 @@
         <div class="my-work-container">
             <div id="my-work" class="title-section">My Work</div>
             <div class="work-list">
-                <div class="work"
-                    onclick="window.open('https://www.youtube.com/watch?v=E0bMZx7ac5M&ab_channel=MalvyDelaban', '_blank')">
+                <div class="work" id="blodscinn">
                     <div class="inside-work">
                         <img src="assets/works/blodscinn.png" alt="blodscinn wrath screenshot" class="img-work">
                         <div class="work-title-line">
@@ -279,9 +278,6 @@
         </div>
     </div>
 
-    <!-- FOOTER -->
-    <div class="footer-container"></div>
-
     <!-- SCRIPTS -->
     <script>
         function openLinkedInChat() {
@@ -295,10 +291,14 @@
         function openGithub() {
             window.open('https://github.com/Malvy-Delaban', '_blank');
         }
-        
+
         function openItchio() {
             window.open('https://malvy-delaban.itch.io/', '_blank');
         }
+
+        document.getElementById("blodscinn").addEventListener("click", function () {
+            window.location.href = `article.html?info=blodscinn`;
+        });
     </script>
 </body>
 
