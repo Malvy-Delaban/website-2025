@@ -98,6 +98,7 @@
 
         function convertMarkdownToHTML(markdown, articleName) {
             markdown = convertMarkdownToHTMLForImages(markdown, articleName);
+            markdown = convertMarkdownToHTMLForLinks(markdown, articleName);
             const youtubeRegex = /@@@(https?:\/\/www\.youtube\.com\/watch\?v=([\w-]+)(?:&[\w=]*)*)@@@/g;
 
             return markdown
@@ -118,7 +119,25 @@
 
                 let html = `<br><br><div class="image-container">`;
                 images.forEach(([_, path, alt]) => {
-                    html += `<div class="single-image" onclick="openLightbox('articles/${articleName}/${path}', '${alt}')"><img src="articles/${articleName}/${path}" alt="${alt}" class="single-image-img"><div class="single-image-description">${alt}</div></div>`;
+                    html += `<div class="single-image" onclick="openLightbox('articles/${articleName}/${path}', \`${alt.replace(/`/g, "\\`")}\`)"><img src="articles/${articleName}/${path}" alt="${alt}" class="single-image-img"><div class="single-image-description">${alt}</div></div>`;
+                });
+                html += `</div>`;
+
+                return html;
+            });
+
+            return markdown;
+        }
+
+        function convertMarkdownToHTMLForLinks(markdown, articleName) {
+            const imageBlockRegex = /\?\?\?\r?\n([\s\S]+?)\r?\n\?\?\?/g;
+            markdown = markdown.replace(imageBlockRegex, (match, content) => {
+                const images = [...content.matchAll(/\((.*?)\)\s*(.*)/g)];
+                if (images.length === 0) return match; // No valid images found, return original text
+
+                let html = `<br><br><div class="icons-link-container">`;
+                images.forEach(([_, path, alt]) => {
+                    html += `<div class="single-icons-link" onclick="openLinkIcon('${alt.replace(/'/g, "\\'")}')"><img src="assets/icons/${path}.png" alt="${path}" class="single-icons-link-img"><div class="single-image-description">See on ${path}</div></div>`;
                 });
                 html += `</div>`;
 
@@ -140,6 +159,10 @@
         document.getElementById("lightbox").addEventListener("click", function () {
             this.classList.add("hidden");
         });
+
+        function openLinkIcon(link) {
+            window.open(link, '_blank');
+        }
 
     </script>
 

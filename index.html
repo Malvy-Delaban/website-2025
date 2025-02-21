@@ -89,7 +89,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="work" onclick="window.open('https://malvy-delaban.itch.io/bubblhead', '_blank')">
+                <div class="work" id="bubblhead">
                     <div class="inside-work">
                         <img src="assets/works/bubblhead.png" alt="bubbl'head screenshot" class="img-work">
                         <div class="work-title-line">
@@ -298,6 +298,10 @@
 
         document.getElementById("blodscinn").addEventListener("click", function () {
             window.location.href = `article.html?info=blodscinn`;
+        });
+
+        document.getElementById("bubblhead").addEventListener("click", function () {
+            window.location.href = `article.html?info=bubblhead`;
         });
     </script>
 </body>
