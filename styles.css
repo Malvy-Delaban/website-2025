@@ -41,6 +41,12 @@ header {
     margin-left: 3rem;
     width: 25vw;
     cursor: default;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo:hover {
+    color: #67E8F2;
 }
 
 .separator-nav {

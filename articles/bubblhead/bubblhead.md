@@ -9,13 +9,13 @@ It is the result of the 2025 Global Game Jam with the theme "bubble". We started
 The project was made by 7 people that were studying at the time at ESMA Toulouse in different sections. We were five last year students in game design, two first year students in game design and one fourth year student in animation. 
 The members are the following :
 
-• ALVES DE MATOS Alexis - Rig / Animator
-• RAMOND Thomas - Tech Artist / Developer
 • ALMAR Rémy - Developer
+• ALVES DE MATOS Alexis - Rig / Animator
+• DELABAN Malvy - 3D Artist / UIs
 • MARIOTTE Axel - Game Designer / Level Designer
 • MOSTEFA Nora - Concept Artist / 3D Artist
+• RAMOND Thomas - Tech Artist / Developer
 • WEBER Ophéline -  Concept Artist / 3D Artist
-• DELABAN Malvy - 3D Artist / UIs
 
 # Development
 The real challenge on this project was to create a local multiplayer game. We took a large amount of time on this weekend making the multiplyaer work. The Art direction was also a big issue as we didn't know how to create something that was simple enough to do it in a single weekend. In the end, we took the Art direction and stylization of Boomerang Fu since it had the same vibe that we wanted to create as you can see in the screenshots below. By the end of the weekend, we had something that matched the game we wanted to make. It has some obvious bugs and a bad user exeperience overall but its playable and a bit fun.
