@@ -104,7 +104,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="work" onclick="window.open('https://malvy-delaban.itch.io/skipthebeat', '_blank')">
+                <div class="work" id="skipthebeat">
                     <div class="inside-work">
                         <img src="assets/works/skipthebeat.png" alt="skip the beat screenshot" class="img-work">
                         <div class="work-title-line">
@@ -306,6 +306,10 @@
 
         document.getElementById("procedural").addEventListener("click", function () {
             window.location.href = `article.html?info=procedural`;
+        });
+
+        document.getElementById("skipthebeat").addEventListener("click", function () {
+            window.location.href = `article.html?info=skipthebeat`;
         });
     </script>
 </body>

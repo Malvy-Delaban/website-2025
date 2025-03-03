@@ -1,5 +1,5 @@
 Title: "Procedural Map"
-Tags: "Web" render, "Concept" game, "Procedural" genre, "Solo" team
+Tags: "Web" render, "Concept" game, "Procedural" genre, "Solo Project" team
 =====
 # About the Procedural Map
 This project was a personal challenge I've worked on during a weekend back in 2022. It is a solo project were my goal was to create a procedural and customizable voxel map. The challenge here was to make it usable on navigator. To do so, I used the library "Threejs". The big issue here, is that it rely only on the capicity of the client computer as there is no back-end supporting the site, only a front-end.
