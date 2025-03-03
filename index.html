@@ -150,7 +150,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="work" onclick="window.open('https://map.malvy-delaban.fr/', '_blank')">
+                <div class="work" id="procedural">
                     <div class="inside-work">
                         <img src="assets/works/procedural.png" alt="procedural map screenshot" class="img-work">
                         <div class="work-title-line">
@@ -302,6 +302,10 @@
 
         document.getElementById("bubblhead").addEventListener("click", function () {
             window.location.href = `article.html?info=bubblhead`;
+        });
+
+        document.getElementById("procedural").addEventListener("click", function () {
+            window.location.href = `article.html?info=procedural`;
         });
     </script>
 </body>
