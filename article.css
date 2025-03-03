@@ -22,6 +22,15 @@
     display: none !important;
 }
 
+a {
+    color: white;
+    text-decoration: none; /* no underline */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 
 #background-article-img {
     width: 100vw;
