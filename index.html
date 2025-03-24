@@ -104,22 +104,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="work" id="skipthebeat">
-                    <div class="inside-work">
-                        <img src="assets/works/skipthebeat.png" alt="skip the beat screenshot" class="img-work">
-                        <div class="work-title-line">
-                            <div class="work-data">Skip The Beat</div>
-                            <div class="work-data">2023</div>
-                        </div>
-                        <div class="work-chips">
-                            <div class="chips render-chip">2D</div>
-                            <div class="chips game-chip">Full Game</div>
-                            <div class="chips genre-chip">Rythm</div>
-                            <div class="chips team-chip">Solo project</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="work" onclick="window.open('https://poke.malvy-delaban.fr/', '_blank')">
+                <div class="work" id="pokeadventure">
                     <div class="inside-work">
                         <img src="assets/works/pokeadventure.png" alt="poke adventure screenshot" class="img-work">
                         <div class="work-title-line">
@@ -135,12 +120,27 @@
                         </div>
                     </div>
                 </div>
-                <div class="work" onclick="window.open('https://malvy-delaban.itch.io/sandyfight', '_blank')">
+                <div class="work" id="skipthebeat">
+                    <div class="inside-work">
+                        <img src="assets/works/skipthebeat.png" alt="skip the beat screenshot" class="img-work">
+                        <div class="work-title-line">
+                            <div class="work-data">Skip The Beat</div>
+                            <div class="work-data">2023</div>
+                        </div>
+                        <div class="work-chips">
+                            <div class="chips render-chip">2D</div>
+                            <div class="chips game-chip">Full Game</div>
+                            <div class="chips genre-chip">Rythm</div>
+                            <div class="chips team-chip">Solo project</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work" id="sandyfight">
                     <div class="inside-work">
                         <img src="assets/works/sandyfight.png" alt="sandy fight screenshot" class="img-work">
                         <div class="work-title-line">
                             <div class="work-data">Sandy Fight</div>
-                            <div class="work-data">2024</div>
+                            <div class="work-data">2023</div>
                         </div>
                         <div class="work-chips">
                             <div class="chips render-chip">3D</div>
@@ -297,19 +297,27 @@
         }
 
         document.getElementById("blodscinn").addEventListener("click", function () {
-            window.location.href = `article.html?info=blodscinn`;
+            window.open(`article.html?info=blodscinn`, "_blank");
         });
 
         document.getElementById("bubblhead").addEventListener("click", function () {
-            window.location.href = `article.html?info=bubblhead`;
+            window.open(`article.html?info=bubblhead`);
         });
 
         document.getElementById("procedural").addEventListener("click", function () {
-            window.location.href = `article.html?info=procedural`;
+            window.open(`article.html?info=procedural`);
         });
 
         document.getElementById("skipthebeat").addEventListener("click", function () {
-            window.location.href = `article.html?info=skipthebeat`;
+            window.open(`article.html?info=skipthebeat`);
+        });
+
+        document.getElementById("pokeadventure").addEventListener("click", function () {
+            window.open(`article.html?info=pokeadventure`);
+        });
+
+        document.getElementById("sandyfight").addEventListener("click", function () {
+            window.open(`article.html?info=sandyfight`);
         });
     </script>
 </body>
