@@ -81,7 +81,7 @@ This way, I ended up with this tier list of the 1000+ Pokémons.
 !!!
 
 # Play Poke Adventure
-You can play right now ! Click on the Web icon below and start your adventure if you're on your phone. You can also browse the project on Github.
+You can play right now ! Click on the Web icon below and start your adventure if you're on your phone. You can also browse the project on Github and check the patchnotes in the github readme.
 
 ???
 (web) https://poke.malvy-delaban.fr/
