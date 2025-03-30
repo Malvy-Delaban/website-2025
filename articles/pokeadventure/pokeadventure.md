@@ -77,7 +77,7 @@ Some rules I followed to help me gain time:
 This way, I ended up with this tier list of the 1000+ Pokémons.
 
 !!!
-(tierlist.png) Rarity tier list
+(tierlist.png) Rarity tier list of Gen 1
 !!!
 
 # Play Poke Adventure
