@@ -2,11 +2,11 @@ Title: "Skip The Beat"
 Tags: "2D" render, "Full Game" game, "Rythm" genre, "Solo project" team
 =====
 # About Skip The Beat
-This project is the very first "complete" game I created. It was the final project of the first year in game design at ESMA Toulouse. It is a 2 month long project were the goal was to create a 2D platformer. We needed to create the universe, general mood, search for inspirations and create the game from A to Z. This is a solo project.
+Skip The Beat is my first "complete" game, created as the final project during my first year in game design at ESMA Toulouse. The project spanned two months, where the goal was to develop a 2D platformer from concept to completion. This was a solo project, where I was responsible for all aspects, including game design, development, and creative direction.
 
 # Tools
-For the musics, I used Soundraw.io to create AI generated songs as I didn't think I could learn music creation in 2 months on top of the development of the game.
-For the other parts of Skip The Beat, I used :
+For the music, I used Soundraw.io, an AI tool to generate tracks since I didn't have time to learn music production alongside game development.
+For the game itself, I used the following tools:
 
 • Unity
 • Procreate (for concepts arts and illustrations)
@@ -14,18 +14,28 @@ For the other parts of Skip The Beat, I used :
 • Blender (for some 3D meshes I didn't use in the end)
 
 # Concept
-Skip The Beat is a 2D platformer and rythm game. The game is simple, in the first part, you have a menuing step in which you choose wich patterns of map you'll play in your level. Each level is associated with a tempo, a difficulty and a part of the music.
-The goal is to make a music that is easy enough to beat in the 2D platformer but hard enough to give you some points. On top of that, your creativity is needed to create your own music.
-Once the game is finished, if you have succesfully finished the level without it, your song is considered "complete" and you basically won.
+Skip The Beat is a 2D platformer and rhythm game. The gameplay is divided into two parts:
+
+1. Song Creation: In this step, you choose patterns of maps to build your level. Each level has a tempo, difficulty, and part of the music.
+
+2. Gameplay: The goal is to complete the level while interacting with the rhythm of the music. The challenge is to create a song that's easy enough to beat in the 2D platformer section but challenging enough to score points.
+
+Once you successfully complete the level without failing, your song is considered "complete," and you've effectively won the game.
+
+Watch the game in action:
 
 @@@https://www.youtube.com/watch?v=xxzNb_dM8TY&ab_channel=MalvyDelaban@@@
 
 # Story
-Moky is a music artist who creates electronic tracks. She gained recognition less than a year ago thanks to a successful feature. But since then, she’s been stuck. Not the slightest idea seems to come to her, and she’s starting to doubt herself.
+Moky, a rising music artist known for her electronic tracks, has hit a creative block. After gaining recognition through a successful feature, she can’t seem to find her next idea. One evening, a friend introduces her to Xochi, an AI music tool that helps artists create songs with customizable tracks.
 
-One evening, over a drink, a friend of hers—also in the music scene—tells her about an AI that’s been making waves. It’s called Xochi, an AI that composes music tracks and allows artists to adapt them as they wish.
+Curious, Moky tries out the AI, only to discover that it’s actually a rhythm game, where she must play along with the generated music. This twist is what drives Moky to find her inspiration and creativity once more.
 
-Curious and with no other options, Moky decides to try out this so-called amazing AI the next day. To her surprise, the tool’s interface is much more playful than expected, and she quickly gets hooked—a rather ironic twist, given that the tool is actually designed to let users play a rhythm game based on the generated music.
+In-Game Characters:
+
+• Moky: A modern, electronic music artist with a design inspired by Daft Punk helmets, LED screens, and fast-paced music.
+
+• DJ Xochi: A reinterpretation of Xochipilli, the Aztec god of music, arts, and playfulness. His design merges traditional Mexican elements with modern musical accessories, blending old and new styles.
 
 !!!
 (moky_solo.png) Moky - in game
@@ -33,10 +43,11 @@ Curious and with no other options, Moky decides to try out this so-called amazin
 !!!
 
 # Character design
-DJ xochi is a pretty straight forward reinterpretation of Xochipilli, an aztec god that represents passion, love, sexuality, music, arts, playfulness and more. It is often represented with very colorful skin tones or clothes and often with leaf clothes. I added traditionnal Mexico clothes and I mixed it with the modern representation of sexuality through clothes (lingerie) and modern musical accessories such as large golden jewelry to mention a recent musical movement (hip-hop / old school US rap).
+DJ Xochi is based on the Aztec god Xochipilli, representing passion, love, music, and playfulness. I added modern elements like large golden jewelry and hip-hop-inspired accessories, which reflect contemporary music culture.
 
-Moky on the other hand is exclusively a representation of modern music and in particular, electronic music.
-She has a design inspired obviously by the Daft Punk helmets, LED dotted screens, winged helmet to enhance her fast music and hasty personality.
+Moky represents modern electronic music, with a design inspired by Daft Punk and LED screens. Her winged helmet and sleek look represent her fast, energetic personality and the rhythm of her music.
+
+Design & Inspirations:
 
 !!!
 (Moky.png) Moky
@@ -47,31 +58,33 @@ She has a design inspired obviously by the Daft Punk helmets, LED dotted screens
 !!!
 
 # Ripomatik
-In the pre-production phase, I worked on a "ripomatik". This is a video editing of different elements taken from movies, music, images, games to present a general mood of the game / the project without having to create anything. It has a huge power to communicate an artistic intention but can easily lock someone in a particular vision of the project
-Here is the ripomatik I made for SkipTheBeat :
+During pre-production, I created a "ripomatik"—a video editing compilation of various movie clips, music, and images—to communicate the mood and artistic direction of the game. While it’s a powerful tool to convey a vision, it can also lock someone into a particular perspective of the project.
+
+Watch the ripomatik here:
 
 @@@https://www.youtube.com/watch?v=xxzNb_dM8TY&ab_channel=MalvyDelaban@@@
 
 # Dynamic Sound interpretation
-Even if it can be subtle in game, a lot of work has been made on the dynamic sound-responsive elements in-game. For example, the background in the menus or in game is always rotating and scaling on itself depending on the tempo of the current music playing. This was made using a tool I developped on Unity, allowing me to get a real-time fedback on a scale from 0 to 1 of the music. It can be used to detect bass sounds as well as trebels depending on my needs. It allows me to adapt anything in game based on the music very easily wherever needed.
+Skip The Beat features dynamic, sound-responsive elements, where the environment adapts to the music. For example, the background in the menus and in-game visuals rotate and scale based on the tempo of the currently playing music.
 
-This tool was based on some of the work of "Peer Play".
+To achieve this, I developed a custom tool in Unity that provides real-time feedback of the music's frequency spectrum. It enables me to adapt game elements (like visuals and movement) based on the music's bass, treble, or general tempo.
+
+This tool was inspired by some of the work from Peer Play.
+Watch their example here:
 @@@https://www.youtube.com/watch?v=4Av788P9stk&t=5s&ab_channel=PeerPlay@@@
 
 # Map generation
-The game allows you to create a music composed of existing music parts (around 15s each). You can choose between multiple tempo and place them as you'd like. Once the music being "contructed" (all the parts adjusted as you like), you can validate the music. It then launches the 2D platformer part of the game where the level is constructing itself around the tempo you chosed earlier.
+The game allows players to create music by selecting pre-made 15-second sections and adjusting tempo and difficulty. Once the song is built, it transitions into the 2D platformer segment where the level is constructed based on the tempo and music.
 
-So basically, chosing exclusively "very hard" parts will make the level nearly impossible to pass for most people and will ask you to be very well timed in your movements and placment in the level, allowing you no rest throughout thewhole music. On top of that, to make the music intersting to listen, you'll need to vary the different tempo at your disposition.
+The level’s difficulty depends on the choices the player makes in song creation. Selecting "very hard" sections can make the level nearly impossible, demanding precise timing and careful movement to succeed. To make the music engaging, players are encouraged to vary the tempos throughout the level.
 
-# Difficulty
-As the player is building its own level, SkipTheBeat was really hard to balance and as they often tend to make the level really hard just by cuiriosity of what could happen, the players lost really fast in the playtests. It was also really frustrating for them as they were not able to listen to the music they "created" earlier.
+# Difficulty and Balancing
+Balancing Skip The Beat proved challenging, as players often created levels that were too difficult and struggled to complete them. To improve playability, I decided to replace the "death on hit" mechanic with a "hit count," allowing players to train without constantly failing.
 
-To balance things up, I decided to not make it a death on hit but to add a "hit count".
-You cannot "finish" the level if you were hit, but you could train yourself as you'd like and listen to your whole music. It was far better and I started to see rivality between playtesters as they tried to take the less hit possible on the same patterns. It looked like the frustration was gone on this point and I was very satisfied with the new gameplay it offered.
+Players can now try to minimize their hits and engage in friendly competition, adding a sense of rivalry among playtesters. This adjustment significantly reduced frustration and improved overall gameplay.
 
 # Play Skip The Beat
-You can test SkipTheBeat yourself by downloading it on itch.io or download the Unity project.
-Click on the logo below.
+You can test Skip The Beat for yourself by downloading the game on itch.io or exploring the Unity project on GitHub.
 
 ???
 (itchio) https://malvy-delaban.itch.io/skipthebeat

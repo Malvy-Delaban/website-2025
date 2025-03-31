@@ -2,18 +2,20 @@ Title: "Sandy Fight"
 Tags: "3D" render, "Game Jam" game, "Casual TPS" genre, "Duo Project" team
 =====
 # About Sandy Fight
-Sandy Fight is a casual Third Person Shooter. You can play up to 10 player on the same map and your goal is to be on top of the scoreboard. You have infinite ammos and your shoots are really slow, forcing you to anticipate your target's move just like games like "Up Gun". You can also jump around in the little city and climb building while sprinting at walls / jump high above your opponents. Every time someone is killed, they respawn on the spawnpoint the most further away from any player. 
+Sandy Fight is a casual Third-Person Shooter (TPS) where you can play with up to 10 players on the same map. The goal is to top the scoreboard by outmaneuvering and outshooting your opponents. In this game, you have infinite ammo, but the shots are slow, so anticipating your target's movement is key, similar to games like Up Gun.
+
+The environment is a small city with the freedom to jump, climb buildings, and sprint on walls, offering verticality and creative movement. Every time a player is killed, they respawn at the furthest spawn point from any other player, ensuring a dynamic and ever-changing gameplay experience.
 
 # Team & development
-This project was made in duo with my other half within 24h in the context of an internal game jam of my video game school at ESMA Toulouse. It was my first game jam and I were at the time in first year. It was also my first experience in developping a multiplayer game.
+Sandy Fight was a duo project created within 24 hours during an internal game jam at ESMA Toulouse, my video game school. At the time, I was in my first year, and it was my first experience developing a multiplayer game.
 
 The team:
 
-<a href="https://www.linkedin.com/in/alexis-alves-de-matos-852b05252/">ALVES DE MATOS Alexis - 3D artist & texturing artist</a>
-<a href="https://www.malvy-delaban.fr/">DELABAN Malvy - Multiplayer & gameplay developper</a>
+<a href="https://www.linkedin.com/in/alexis-alves-de-matos-852b05252/">ALVES DE MATOS Alexis - 3D Artist & Texturing Artist</a>
+<a href="https://www.malvy-delaban.fr/">DELABAN Malvy - Multiplayer & Gameplay Developer</a>
 
 # Inspirations
-We took inspirations in ancient Mesopotamian architecture as well berber and mudbrick architecture found in north Africa, Middle-East or central Asia. On top of that, we used the work of Omar Abdullkader and Fred Taylor as references for building shapes.
+We drew inspiration from ancient Mesopotamian architecture as well as Berber and mudbrick architecture found across North Africa, the Middle East, and Central Asia. The works of Omar Abdullkader and Fred Taylor also influenced the shape and design of our buildings.
 
 
 
@@ -31,16 +33,16 @@ We took inspirations in ancient Mesopotamian architecture as well berber and mud
 !!!
 
 # Difficulties
-During this short but very intense development, I had to learn to make a multiplayer system, communicate to the server, synchronizing all clients, create a lobby system before even creating the shooting gameplay. It took me most of the development time to do so but I ended up with a result I am very proud of (if we take into account I had a limited time and was very new to multiplayer game development).
+Developing Sandy Fight was an intense experience, especially given the limited 24-hour timeframe. One of the most significant challenges was learning to implement a multiplayer system. I had to handle client-server communication, synchronization, and the creation of a lobby system before even getting to the core gameplay mechanics. Most of my time was spent on these foundational elements, but in the end, I’m proud of the result, especially considering it was my first multiplayer game.
 
-Another big issue I encountered was the physics, it was really hard to create from scratch the controller I had in mind. Most of my issues came from the wall climbing mechanics and the invisible walls which needed to prevent the player from climbing the arena limits without preventing them to climb building within the arena. If I had to work again on that project, I would spend some time working on a better feedback for those invisible walls that are not intuitive nor understandable.
+Another major challenge was the physics system. I had to create the player controller from scratch, particularly the wall climbing mechanics and managing invisible barriers. The tricky part was ensuring players could climb buildings while preventing them from scaling the arena limits. If I had more time, I would have spent additional effort on providing clearer feedback for these invisible walls, as their behavior was not intuitive.
 
-Feedbacks in general are very poor as we rushed through the wall project without taking enough perspective.
-The scoreboard for example is poorly designed (and bugged), the random colors representing the different players are not sync, thus confusing players in game. There is no clear indicator of a player joining the game nor there is a feedback on hit landed or taken.
+Other areas that would benefit from refinement include the overall feedback system. Many aspects, such as the scoreboard, player color synchronization, and feedback on actions (like hits), were rushed and lack polish. There’s also no clear indicator when a player joins the game, and some bugs in the scoreboard made it confusing.
 
 # More of Sandy Fight
-As the servers were downed after some time without using them, you cannot experience Sandy Fight for now.
-I am currently working on the issue and will be updating this page when it is back up. Thanks or your patience.
+Unfortunately, the servers for Sandy Fight are no longer active. Due to a computer swap and corrupted backups, the project is now lost, and the servers will remain closed. This means the game will not be updated or made available again. We apologize for the inconvenience.
+
+Feel free to visit the original Sandy Fight page on itch.io, though please note that the game is no longer playable:
 
 ???
 (itchio) https://malvy-delaban.itch.io/sandyfight
