@@ -27,7 +27,7 @@ To keep players engaged during December, I hosted special events, such as giveaw
 !!!
 
 # New features
-With the number of reccurent players not decreasing after January and February, I decided to make a huge patch to fix the bugs they noticed and implement some features they asked for weeks. For the completionnists, I created a pokedex, to help them track the Pokémons they encountered and catched and an egg shop to help them find the Pokémon they struggle to find. I also implemented an automatic recurrent event based on the phase of the moon to break the monotony of the encounters, thus, 2 times a month, a special encounter will provide shinies on full moons and another with increased rarity pokémons for new moons.
+With the number of reccurent players not decreasing after January and February, I decided to make a huge patch to fix the bugs they noticed and implement some features they asked for weeks. For the completionnists, I created a pokedex, to help them track the Pokémons they encountered and caught and an egg shop to help them find the Pokémon they struggle to find. I also implemented an automatic recurrent event based on the phase of the moon to break the monotony of the encounters, thus, 2 times a month, a special encounter will provide shinies on full moons and another with increased rarity pokémons for new moons.
 
 !!!
 (egg.png) Egg buying
