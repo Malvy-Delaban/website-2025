@@ -44,10 +44,10 @@ With the number of reccurent players not decreasing after January and February, 
 Though I didn’t face any massive blockers, there were some challenges along the way:
 
 No Backend:
-The game runs entirely locally, which meant no online saves. I used local storage and created a save file system to ensure that players didn’t lose progress if they cleared browser cache. This setup also allowed some players to cheat, but I chose not to complicate the system, as it was meant to be fun.
+The game runs entirely locally, which meant no online saves. I used local storage and created a save file system to ensure that players didn’t lose progress if they cleared browser cache. This setup also allowed some players to cheat, but I chose not to prevent those type of behavior with additionnal securities as it is another way for them to have fun.
 
 Data Collection:
-With over 1000 Pokémon to gather data for, I used Python scripts to collect and format the necessary information. I also ensured everything was in French, as the game was created specifically for my partner.
+With over 1000 Pokémon to gather data for, I created some Python scripts to collect and format the necessary information. I also ensured everything was in French, as the game was created specifically for my partner.
 
 No Frameworks:
 I built the entire game from scratch, including UI and CSS, without relying on external libraries or frameworks.
