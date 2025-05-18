@@ -62,7 +62,7 @@ During pre-production, I created a "ripomatik"—a video editing compilation of 
 
 Watch the ripomatik here:
 
-@@@https://www.youtube.com/watch?v=xxzNb_dM8TY&ab_channel=MalvyDelaban@@@
+@@@https://www.youtube.com/watch?v=DoZVvZdvX-E&ab_channel=MalvyDelaban@@@
 
 # Dynamic Sound interpretation
 Skip The Beat features dynamic, sound-responsive elements, where the environment adapts to the music. For example, the background in the menus and in-game visuals rotate and scale based on the tempo of the currently playing music.
