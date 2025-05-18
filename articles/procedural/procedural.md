@@ -18,8 +18,8 @@ The map is generated using Perlin Noise, a gradient noise function commonly used
 Each time you generate the map, the seed is randomized, resulting in a new variation of the terrain.
 
 !!!
-(height_low.png) A map with low height
-(height_high.png) The same parameters with higher height
+(height_low_.png) A map with low height
+(height_high_.png) The same parameters with higher height
 !!!
 
 # The map creation
@@ -41,8 +41,8 @@ As this was a timed challenge, there were some decisions made that I would chang
 2. Material Optimization: Since this was my first 3D project, I didn't know much about materials in Three.js. For each mesh, I created a unique material, which, while visually appealing, negatively impacted performance. In hindsight, it would have been better to use just four premade materials and apply them across multiple meshes, avoiding unnecessary material creation.
 
 !!!
-(low_performances.png) Low Performance Map
-(high_performances.png) High Performance Map
+(low_performances_.png) Low Performance Map
+(high_performances_.png) High Performance Map
 !!!
 
 # Play the Procedural Map

@@ -73,7 +73,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="work" onclick="window.open('https://github.com/RemyAlmar/VoidFisher', '_blank')">
+                <div class="work" id="voidfisher">
                     <div class="inside-work">
                         <img src="assets/works/voidfisher.png" alt="void fisher screenshot" class="img-work">
                         <div class="work-title-line">
@@ -162,6 +162,21 @@
                             <div class="chips game-chip">Concept</div>
                             <div class="chips genre-chip">Procedural</div>
                             <div class="chips team-chip">Solo project</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work" id="misc-dev-web">
+                    <div class="inside-work">
+                        <img src="assets/works/web-dev-misc.png" alt="misc dev web screenshot" class="img-work">
+                        <div class="work-title-line">
+                            <div class="work-data">Misc dev sites</div>
+                            <div class="work-data">2022 - Today</div>
+                        </div>
+                        <div class="work-chips">
+                            <div class="chips render-chip">Web</div>
+                            <div class="chips game-chip">Mini games</div>
+                            <div class="chips game-chip">Tools</div>
+                            <div class="chips team-chip">Solo projects</div>
                         </div>
                     </div>
                 </div>
@@ -318,6 +333,14 @@
 
         document.getElementById("sandyfight").addEventListener("click", function () {
             window.open(`article.html?info=sandyfight`);
+        });
+
+        document.getElementById("voidfisher").addEventListener("click", function () {
+            window.open(`article.html?info=voidfisher`);
+        });
+
+        document.getElementById("misc-dev-web").addEventListener("click", function () {
+            window.open(`article.html?info=misc-dev-web`);
         });
     </script>
 </body>
